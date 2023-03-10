@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="w-50 m-auto shadow bg-success rounded-4 p-5 my-5">
+        <h2>CRUD system</h2>
+
+        <label for="productName" class="my-2">productName</label>
+        <input type="text" value="" class="form-control mb-3" id="productName" />
+
+        <label for="productCategory" class="my-2">productCategory</label>
+        <input type="text" class="form-control mb-3" id="productCategory" />
+
+        <label for="productPrice" class="my-2">productPrice</label>
+        <input type="text" class="form-control mb-3" id="productPrice" />
+
+        <label for="productDescription" class="my-2">productDescription</label>
+        <textarea id="productDescription" class="form-control" cols="30" rows="5"></textarea>
+
+        <button onclick="addProduct()" class="btn btn-outline-info my-3">
+        Add Product
+      </button>
+    </div>
+
+    <input type="search" id="searchInput" onkeyup="search()" class="form-control w-25 text-center m-auto my-5" />
+
+    <div class="container text-bg-light border-5 w-50 p-5 my-5 m-auto rounded-3">
+        <table class="table table-striped table-hover text-center">
+            <thead>
+                <th>Index</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Delete</th>
+                <th>Update</th>
+            </thead>
+            <tbody id="demo"></tbody>
+        </table>
+    </div>
+
+    <!-- 
+    <img src="./image/giphy.gif" id="img" alt=""> -->
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
